@@ -1,0 +1,240 @@
+body{
+    display: grid;
+    width: auto;
+    margin: 0;
+    grid-template-rows: 12.5% 87.5%;
+    background-color: #89C7FF;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    display: grid;
+    height: 120px;
+    grid-row: 1;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 2fr 1fr;
+    grid-gap: 2px;
+    background-color: #2C74B6;
+    border-radius: 10px;
+}
+
+header img{
+    max-width: 100px;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+}
+
+header h1{
+    font-size: 50px;
+    align-self: center;
+    justify-self: center;
+    grid-column: 1 / 13;
+    grid-row: 1;
+    color: white;
+}
+
+nav{
+    grid-column: 1 / 13;
+    background-color: #89C7FF;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    align-self: center;
+    justify-self: center;
+    width: 1fr;
+    padding: 3% 30% 3% 30%;
+    background-color: #2C74B6;
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+    white-space: nowrap;
+}
+
+nav li:hover {
+    background-color: #276094;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: lightblue;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+#current {
+    background-color: #276094;
+    text-underline-position: under;
+}
+
+main {
+    background-color: #AEC0CD;
+    grid-row: 2;
+    display: grid;
+    height: 1280px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    color: #276094;
+    font-size: 120%;
+}
+
+main div {
+    display: grid;
+    max-height: 320px;
+    grid-template-areas:
+    "name name"
+    "img p"
+    "img ul";
+    grid-template-columns: 240px 3fr;
+    grid-template-rows: 20% 10% 70%;
+    margin-left: 20px;
+    justify-self: left;
+    align-self: center;
+}
+
+main h2 {
+    align-self: center;
+    grid-area: name;
+}
+
+main img {
+    grid-area: img;
+    max-width: 240px;
+}
+
+main p {
+    margin-top: 5px;
+    margin-left: 20px;
+    grid-area: p;
+}
+
+main ul {
+    grid-area: ul;
+}
+
+#college {
+    grid-column: 1 / 13;
+    grid-row: 1 / 4;
+
+}
+
+#car {
+    grid-column: 1 / 13;
+    grid-row: 4 / 7;
+}
+
+#autonomous {
+    grid-column: 1 / 13;
+    grid-row: 7 / 10;
+}
+
+#autonomous img {
+    min-width: 240px;
+    max-height: 220px;
+}
+
+#GIS {
+    grid-column: 1 / 13;
+    grid-row: 10 / 13;
+}
+
+@media screen and (max-width: 1180px) {
+    body {
+        grid-template-rows: 12.25% 87.75%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    body {
+        grid-template-rows: 12% 88%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        font-size: 110%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    nav li {
+        padding: 3% 25% 3% 25%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    nav li {
+        padding: 3% 20% 3% 20%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    main {
+        font-size: 100%;
+    }
+
+    header h1 {
+        grid-column: 4 / 13;
+    }
+
+    header img {
+        grid-column: 1 / 4;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav li {
+        padding: 3% 15% 3% 15%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    main {
+        font-size: 80%;
+    }
+    main div {
+        grid-template-columns: 200px 3fr;
+    }
+    main img {
+        max-width: 200px;
+    }
+    #autonomous img {
+        min-width: 200px;
+        max-height: 200px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    body {
+        grid-template-rows: 11.5% 88.5%;
+    }
+    nav li {
+        padding: 3% 10% 3% 10%;
+    }
+    main div {
+        grid-template-rows: 20% 15% 65%;
+    }
+}
