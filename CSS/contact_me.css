@@ -1,8 +1,9 @@
 body{
     display: grid;
     width: auto;
+    height: 750px;
     margin: 0;
-    grid-template-rows: 11% 89%;
+    grid-template-rows: 23.5% 76.5%;
     background-color: #89C7FF;
     font-family: "Roboto", sans-serif;
 }
@@ -17,7 +18,7 @@ header{
     border-radius: 10px;
 }
 
-header img {
+header img{
     max-width: 100px;
     grid-column: 1 / 3;
     grid-row: 1;
@@ -100,115 +101,91 @@ main {
     background-color: #AEC0CD;
     grid-row: 2;
     display: grid;
-    height: 1450px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
+    color: white;
+    font-size: 120%;
 }
 
-main div {
-    justify-self: center;
-    align-self: center;
+#me {
+    grid-column: 2 / 5;
+    grid-row: 3 / 11;
 }
 
-main img {
-    max-width: 320px;
-}
-
-main h3 {
+div h2 {
     text-align: center;
-    color: #276094;
+    margin: 10px 0;
+    background-color: #2C74B6;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    width: calc(100% - 30px);
+    height: calc(100% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#timeline {
-    grid-column: 5 / 9;
-    grid-row: 1 / 13;
+#separator {
+    grid-column: 5;
+    grid-row: 2 / 12;
+    width: 1px;
+    height: 100%;
+    background-color: #2C74B6;
     justify-self: center;
 }
 
-#Fall2021 {
-    grid-column: 1 / 6;
-    grid-row: 2 / 5;
+#information_form {
+    grid-column: 6 / 12;
+    grid-row: 3 / 11;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 100px 100px 0 0;
+    align-content: space-evenly;
+    background-color: #2C74B6;
+    border-radius: 20px;
 }
 
-#Fall2021 img {
-    border: dashed 2px lightblue;
+#information_form h2 {
+    grid-row: 1;
+    margin-left: 20px;
+    justify-self: center;
+    text-align: center;
 }
 
-#Fall2021 img:hover {
-    border: dashed 2px blue;
+#email {
+    grid-row: 2;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 150%;
 }
 
-#Spring2022 {
-    grid-column: 8 / 13;
-    grid-row: 4 / 7;
+#phone {
+    grid-row: 3;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 150%;
 }
 
-#Spring2022 img {
-    min-width: 320px;
-    max-height: 320px;
-    margin-left: 3em;
-    border: dashed 2px lightblue;
-}
-
-#Spring2022 img:hover {
-    border: dashed 2px blue;
-}
-
-#Summer2022 {
-    grid-column: 1 / 6;
-    grid-row: 6 / 8;
-}
-
-#Summer2022 img {
-    margin-left: 1em;
-}
-
-#Fall2022 {
-    grid-column: 8 / 13;
-    grid-row: 7 / 10;
-}
-
-#Fall2022 img {
-    margin-left: 1.5em;
-    border: dashed 2px lightblue;
-}
-
-#Fall2022 img:hover {
-    border: dashed 2px blue;
-}
-
-#Spring2023 {
-    align-self: start;
-    grid-column: 1 / 6;
-    grid-row: 10 / 11;
-}
-
-#Beyond {
-    grid-column: 6 / 8;
-    grid-row: 11 / 13;
-    width: 100px;
-    height: 100px;
-    background-color: transparent;
-}
-
-#Beyond img {
-    margin-top: 8px;
-    border: dashed 2px lightblue;
-    border-radius: 500px;
-}
-
-#Beyond img:hover {
-    border: dashed 2px blue;
-    border-radius: 500px;
-}
-
-@media screen and (max-width: 880px) {
-    main img {
-        max-width: 260px;
+@media screen and (max-width: 1200px) {
+    #me h2 {
+        font-size: 99%;
     }
-    #Spring2022 img {
-        min-width: 260px;
-        max-height: 260px;
+}
+
+@media screen and (max-width: 860px) {
+    #me h2 {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #me h2 {
+        font-size: 60%;
     }
 }
 
@@ -220,45 +197,19 @@ main h3 {
     header img {
         grid-column: 1 / 4;
     }
-
-    main img {
-        max-width: 200px;
-    }
-
-    #Spring2022 img {
-        min-width: 200px;
-        max-height: 200px;
-    }
-
-    main h3 {
-        font-size: 100%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    main img {
-        max-width: 160px;
-    }
-
-    #Spring2022 img {
-        min-width: 160px;
-        max-height: 160px;
-    }
 }
 
 @media screen and (max-width: 580px) {
     nav li {
         font-size: 90%;
     }
+    #me h2 {
+        font-size: 40%;
+    }
 }
 
-@media screen and (max-width: 510px) {
-    main img {
-        max-width: 140px;
-    }
-
-    #Spring2022 img {
-        min-width: 140px;
-        max-height: 140px;
+@media screen and (max-width: 480px) {
+    main {
+        font-size: 80%;
     }
 }
