@@ -7,205 +7,208 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
-header{
-    display: grid;
-    height: 180px;
-    grid-row: 1;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 2fr 1fr;
-    background-color: #2C74B6;
-    border-radius: 10px;
-}
+    header{
+        display: grid;
+        height: 180px;
+        grid-row: 1;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 2fr 1fr;
+        background-color: #2C74B6;
+        border-radius: 10px;
+    }
 
-header img {
-    max-width: 100px;
-    grid-column: 1 / 3;
-    grid-row: 1;
-    align-self: center;
-    justify-self: center;
-}
+        header img {
+            max-width: 100px;
+            grid-column: 1 / 3;
+            grid-row: 1;
+            align-self: center;
+            justify-self: center;
+        }
 
-header h1{
-    font-size: 50px;
-    align-self: center;
-    justify-self: center;
-    grid-column: 1 / 13;
-    grid-row: 1;
-    color: white;
-    white-space: nowrap;
-}
+        header h1{
+            font-size: 50px;
+            align-self: center;
+            justify-self: center;
+            grid-column: 1 / 13;
+            grid-row: 1;
+            color: white;
+            white-space: nowrap;
+        }
 
-nav{
-    grid-column: 1 / 13;
-    background-color: #89C7FF;
-}
+        nav{
+            grid-column: 1 / 13;
+            background-color: #89C7FF;
+        }
 
-nav ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+            nav ul{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                justify-content: space-evenly;
+                align-content: space-evenly;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
 
-nav li{
-    align-self: center;
-    justify-self: center;
-    text-align: center;
-    background-color: #2C74B6;
-    border-radius: 10px;
-    box-sizing: border-box;
-    padding: 15px 30px;
-    width: calc(100% - 30px);
-    height: calc(100% - 10px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: large;
-    white-space: nowrap;
-}
+                nav li{
+                    align-self: center;
+                    justify-self: center;
+                    text-align: center;
+                    background-color: #2C74B6;
+                    border-radius: 10px;
+                    box-sizing: border-box;
+                    padding: 15px 30px;
+                    width: calc(100% - 30px);
+                    height: calc(100% - 10px);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: large;
+                    white-space: nowrap;
+                }
 
-nav li:hover {
-    background-color: #276094;
-}
+                nav li:hover {
+                    background-color: #276094;
+                }
 
-a:link {
-    color: white;
-    text-decoration: none;
-}
+                    a:link {
+                        color: white;
+                        text-decoration: none;
+                    }
 
-a:visited {
-    text-decoration: none;
-    color: lightblue;
-}
+                    a:visited {
+                        text-decoration: none;
+                        color: lightblue;
+                    }
 
-a:hover {
-    text-decoration: underline;
-    text-underline-position: under;
-}
+                    a:hover {
+                        text-decoration: underline;
+                        text-underline-position: under;
+                    }
 
-a:active {
-    text-decoration: none;
-}
+                    a:active {
+                        text-decoration: none;
+                    }
 
-#current {
-    background-color: #276094;
-    text-underline-position: under;
-}
+                #current {
+                    background-color: #276094;
+                    text-underline-position: under;
+                }
 
-main {
-    background-color: #AEC0CD;
-    grid-row: 2;
-    display: grid;
-    height: 1450px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-}
+    main {
+        background-color: #AEC0CD;
+        grid-row: 2;
+        display: grid;
+        height: 1450px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
 
-main div {
-    justify-self: center;
-    align-self: center;
-}
+        main div {
+            justify-self: center;
+            align-self: center;
+        }
 
-main img {
-    max-width: 320px;
-}
+        main img {
+            max-width: 320px;
+        }
 
-main h3 {
-    text-align: center;
-    color: #276094;
-}
+        main h3 {
+            text-align: center;
+            color: #276094;
+        }
 
-#timeline {
-    grid-column: 5 / 9;
-    grid-row: 1 / 13;
-    justify-self: center;
-}
+        #timeline {
+            grid-column: 5 / 9;
+            grid-row: 1 / 13;
+            justify-self: center;
+        }
 
-#Fall2021 {
-    grid-column: 1 / 6;
-    grid-row: 2 / 5;
-}
+        #Fall2021 {
+            grid-column: 1 / 6;
+            grid-row: 2 / 5;
+        }
 
-#Fall2021 img {
-    border: dashed 2px lightblue;
-}
+            #Fall2021 img {
+                border: dashed 2px lightblue;
+            }
 
-#Fall2021 img:hover {
-    border: dashed 2px blue;
-}
+            #Fall2021 img:hover {
+                border: dashed 2px blue;
+            }
 
-#Spring2022 {
-    grid-column: 8 / 13;
-    grid-row: 4 / 7;
-}
+        #Spring2022 {
+            grid-column: 8 / 13;
+            grid-row: 4 / 7;
+        }
 
-#Spring2022 img {
-    min-width: 320px;
-    max-height: 320px;
-    margin-left: 3em;
-    border: dashed 2px lightblue;
-}
+            #Spring2022 img {
+                min-width: 320px;
+                max-height: 320px;
+                margin-left: 3em;
+                border: dashed 2px lightblue;
+            }
 
-#Spring2022 img:hover {
-    border: dashed 2px blue;
-}
+            #Spring2022 img:hover {
+                border: dashed 2px blue;
+            }
 
-#Summer2022 {
-    grid-column: 1 / 6;
-    grid-row: 6 / 8;
-}
+        #Summer2022 {
+            grid-column: 1 / 6;
+            grid-row: 6 / 8;
+        }
 
-#Summer2022 img {
-    margin-left: 1em;
-}
+            #Summer2022 img {
+                margin-left: 1em;
+            }
 
-#Fall2022 {
-    grid-column: 8 / 13;
-    grid-row: 7 / 10;
-}
+        #Fall2022 {
+            grid-column: 8 / 13;
+            grid-row: 7 / 10;
+        }
 
-#Fall2022 img {
-    margin-left: 1.5em;
-    border: dashed 2px lightblue;
-}
+            #Fall2022 img {
+                margin-left: 1.5em;
+                border: dashed 2px lightblue;
+            }
 
-#Fall2022 img:hover {
-    border: dashed 2px blue;
-}
+            #Fall2022 img:hover {
+                border: dashed 2px blue;
+            }
 
-#Spring2023 {
-    align-self: start;
-    grid-column: 1 / 6;
-    grid-row: 10 / 11;
-}
+        #Spring2023 {
+            align-self: start;
+            font-size: x-large;
+            grid-column: 1 / 6;
+            grid-row: 10 / 11;
+        }
 
-#Beyond {
-    grid-column: 6 / 8;
-    grid-row: 11 / 13;
-    width: 100px;
-    height: 100px;
-    background-color: transparent;
-}
+        #Beyond {
+            grid-column: 6 / 8;
+            grid-row: 11 / 13;
+            width: 100px;
+            height: 100px;
+            background-color: transparent;
+        }
 
-#Beyond img {
-    margin-top: 8px;
-    border: dashed 2px lightblue;
-    border-radius: 500px;
-}
+            #Beyond img {
+                margin-top: 8px;
+                border: dashed 2px lightblue;
+                border-radius: 500px;
+            }
 
-#Beyond img:hover {
-    border: dashed 2px blue;
-    border-radius: 500px;
-}
+            #Beyond img:hover {
+                border: dashed 2px blue;
+                border-radius: 500px;
+            }
 
 @media screen and (max-width: 880px) {
+
     main img {
         max-width: 260px;
     }
+
     #Spring2022 img {
         min-width: 260px;
         max-height: 260px;
@@ -213,6 +216,7 @@ main h3 {
 }
 
 @media screen and (max-width: 680px) {
+
     header h1 {
         grid-column: 4 / 13;
     }
@@ -236,6 +240,7 @@ main h3 {
 }
 
 @media screen and (max-width: 600px) {
+
     main img {
         max-width: 160px;
     }
@@ -247,12 +252,14 @@ main h3 {
 }
 
 @media screen and (max-width: 580px) {
+
     nav li {
         font-size: 90%;
     }
 }
 
 @media screen and (max-width: 510px) {
+
     main img {
         max-width: 140px;
     }
