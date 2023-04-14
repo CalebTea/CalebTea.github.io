@@ -1,9 +1,13 @@
+html {
+    height: 100%;
+}
+
 body{
     display: grid;
     width: auto;
-    height: 750px;
+    min-height: 100%;
     margin: 0;
-    grid-template-rows: 23.5% 76.5%;
+    grid-template-rows: 180px calc(100% - 180px);
     background-color: #89C7FF;
     font-family: "Roboto", sans-serif;
 }
